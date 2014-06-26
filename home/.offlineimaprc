@@ -1,0 +1,15 @@
+[general]
+accounts = Test
+
+[Account Test]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/.local/share/mail
+
+[Repository Remote]
+type = IMAP
+remotehost = achernar.uberspace.de
+remoteuser = erikhahn
