@@ -1,3 +1,5 @@
 [user]
 	email = erik_hahn@gmx.de
 	name = Erik Hahn
+[core]
+	excludesfile = /home/erik/.gitignore_global
