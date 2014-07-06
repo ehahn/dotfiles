@@ -3,3 +3,5 @@
 	name = Erik Hahn
 [core]
 	excludesfile = /home/erik/.gitignore_global
+[push]
+	default = simple
