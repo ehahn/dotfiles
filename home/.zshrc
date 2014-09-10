@@ -75,3 +75,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
 alias gcalcli='python2 /usr/bin/gcalcli'
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
