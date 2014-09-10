@@ -5,7 +5,7 @@ set smartcase
 set ignorecase
 set noerrorbells vb t_vb=
 "set formatoptions=croql
-let mapleader = ","
+"let mapleader = ","
 set mouse=a
 set sw=4 sts=4 expandtab
 set omnifunc=syntaxcomplete#Complete
@@ -59,3 +59,4 @@ augroup templates
 augroup END
 
 set number "relativenumber
+syntax on
