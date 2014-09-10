@@ -1,0 +1,14 @@
+"pulseaudio-ctl up"
+    XF86AudioRaiseVolume
+
+"pulseaudio-ctl down"
+    XF86AudioLowerVolume
+
+"pulseaudio-ctl mute-input"
+    XF86AudioMicMute
+
+"pulseaudio-ctl mute"
+    XF86AudioMute
+
+"slock"
+    Control+Alt+l

@@ -1,3 +1,5 @@
 .config/awesome
 .ssh
 .config
+.config/newsbeuter
+.ipython/profile_default

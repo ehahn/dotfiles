@@ -1,0 +1,18 @@
+set realname='Erik Hahn'
+set from='Erik Hahn <erik_hahn@gmx.de>'
+set mbox_type=Maildir
+set folder="~/.local/share/mail/"
+set spoolfile="+INBOX"
+set record="+Sent"
+set mbox="+Archive"
+set postponed="+Drafts"
+
+set copy
+set postpone
+
+set sendmail=/usr/bin/msmtp
+
+set sort=threads
+set narrow_tree
+
+macro index,pager \cb '<pipe-message>urlscan -b<Enter>' 'Follow links with urlscan'

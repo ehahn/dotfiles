@@ -1,9 +1,12 @@
 [general]
 accounts = Test
+pythonfile = ~/.offlineimap.py
+maxsyncaccounts = 2
 
 [Account Test]
 localrepository = Local
 remoterepository = Remote
+autorefresh = 2
 
 [Repository Local]
 type = Maildir
@@ -13,3 +16,5 @@ localfolders = ~/.local/share/mail
 type = IMAP
 remotehost = achernar.uberspace.de
 remoteuser = erikhahn
+remotepasseval = get_password()
+idlefolders = ['INBOX']

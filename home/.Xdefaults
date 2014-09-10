@@ -1,0 +1,3 @@
+URxvt*background: White
+URxvt*saveLines: 65535
+URxvt.urgentOnBell: True
