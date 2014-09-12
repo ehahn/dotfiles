@@ -74,4 +74,16 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
 alias gcalcli='python2 /usr/bin/gcalcli'
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+alias vi=vim
+alias sudo='sudo -E'
+
+eval $(dircolors ~/.dir_colors)
+
+if [[ $COLORTERM == gnome-terminal ]]; then
+    if [[ $TERM == xterm ]]; then
+        TERM=gnome-256color
+    elif [[ $TERM == screen ]]; then
+        TERM=screen-256color
+    fi
+fi
+

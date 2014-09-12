@@ -29,9 +29,6 @@ let g:auto_save = 0
 let g:auto_save_no_updatetime = 1
 "set autowrite
 Bundle 'kien/ctrlp.vim'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_root_markers = ['.ctrlp']
 
 if version >= 703
     "Bundle 'Valloric/YouCompleteMe'
@@ -49,6 +46,16 @@ Bundle 'godlygeek/tabular'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
 Bundle 'dhruvasagar/vim-table-mode'
+
+Bundle 'jpalardy/vim-slime'
+let g:slime_target="tmux"
+let g:slime_python_ipython = 1
+
+Bundle 'kshenoy/vim-signature'
+
+Bundle 'altercation/vim-colors-solarized'
+colorscheme solarized
+"set t_Co=16 " TODO
 
 filetype plugin indent on
 
