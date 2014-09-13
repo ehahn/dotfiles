@@ -50,6 +50,9 @@ Bundle 'dhruvasagar/vim-table-mode'
 Bundle 'jpalardy/vim-slime'
 let g:slime_target="tmux"
 let g:slime_python_ipython = 1
+let g:slime_no_mappings = 1
+xmap <Leader>s <Plug>SlimeRegionSend
+nmap <Leader>c <Plug>SlimeConfig
 
 Bundle 'kshenoy/vim-signature'
 

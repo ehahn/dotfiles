@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -79,11 +79,16 @@ alias sudo='sudo -E'
 
 eval $(dircolors ~/.dir_colors)
 
-if [[ $COLORTERM == gnome-terminal ]]; then
-    if [[ $TERM == xterm ]]; then
-        TERM=gnome-256color
-    elif [[ $TERM == screen ]]; then
-        TERM=screen-256color
-    fi
+if [[ $UID == 0 ]]; then
+    color=red
+else
+    color=green
 fi
 
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [[ $USER != erik ]]; then
+    PROMPT="%{$bg[white]$fg_bold[$color]%}%n@%m:%~ %{$reset_color%}"
+else
+    PROMPT="%{$bg[white]$fg_bold[$color]%}%~ %{$reset_color%}"
+fi
+
+setopt HIST_IGNORE_DUPS
