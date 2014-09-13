@@ -1,1 +1,2 @@
 setxkbmap de us
+xrdb ~/.Xresources
