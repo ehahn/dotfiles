@@ -9,6 +9,7 @@ set noerrorbells vb t_vb=
 set mouse=a
 set sw=4 sts=4 expandtab
 set omnifunc=syntaxcomplete#Complete
+set nofoldenable
 syntax enable
 
 filetype off
@@ -18,11 +19,14 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-dispatch'
-"Bundle 'kana/vim-textobj-user'
-"Bundle 'rbonvall/vim-textobj-latex'
-Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Bundle 'kana/vim-textobj-user'
+Bundle 'rbonvall/vim-textobj-latex'
+"let g:Tex_DefaultTargetFormat = 'pdf'
+"Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
 Bundle 'vimoutliner/vimoutliner'
+
+Bundle 'msanders/snipmate.vim'
 
 Bundle 'vim-auto-save'
 let g:auto_save = 0
