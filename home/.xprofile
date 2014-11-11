@@ -1,2 +1,2 @@
+~/.screenlayout/default.sh
 setxkbmap de us
-xrdb ~/.Xresources

@@ -76,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 alias gcalcli='python2 /usr/bin/gcalcli'
 alias vi=vim
 alias sudo='sudo -E'
+alias pacaur='pacaur --noedit'
 
 eval $(dircolors ~/.dir_colors)
 
