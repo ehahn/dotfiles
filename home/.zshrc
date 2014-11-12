@@ -77,6 +77,7 @@ alias gcalcli='python2 /usr/bin/gcalcli'
 alias vi=vim
 alias sudo='sudo -E'
 alias pacaur='pacaur --noedit'
+alias e='emacs -nw'
 
 eval $(dircolors ~/.dir_colors)
 

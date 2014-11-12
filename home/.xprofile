@@ -1,2 +1,3 @@
+pulseaudio -k
 ~/.screenlayout/default.sh
 setxkbmap de us
